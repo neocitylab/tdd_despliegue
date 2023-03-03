@@ -1,8 +1,12 @@
 {
     "dev": {
         "app_function": "dolar.f",
+        "keep_warm": false,
+        "role_name": "LabRole",
+        "manage_roles": false,
         "aws_region": "us-east-1",        
         "project_name": "dolar-dev",
+        "apigateway_enabled": false,
         "runtime": "python3.8",
         "s3_bucket": "dolar-raw-217"
     }
