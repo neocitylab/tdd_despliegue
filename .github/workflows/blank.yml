@@ -48,5 +48,5 @@ jobs:
       - name: lambda setup
         run: |
           source env/bin/activate
-          zappa deploy dev
+          zappa update dev
           zappa invoke dolar.f
