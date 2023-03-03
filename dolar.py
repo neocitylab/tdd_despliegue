@@ -2,7 +2,7 @@ import json
 import boto3
 from urllib.request import urlopen
 
-def lambda_handler(event, context):
+def f(event, context):
     with urlopen("https://totoro.banrep.gov.co/estadisticas-economicas/rest/consultaDatosService/consultaMercadoCambiario") as response:
         body = response.read() 
     
