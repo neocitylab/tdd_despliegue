@@ -9,11 +9,11 @@ def f(event, context):
     print(body)
     
     s3 = boto3.resource('s3')
-    object=s3.Object('dolar-raw-127', 'dolar_timestamp.txt')
+    object=s3.Object('dolar-raw-217', 'dolar_timestamp.txt')
     object.put(Body=body)
     print("file uploaded successfully")
     
     return {
     'statusCode': 200,
-    'body': json.dumps('Hello from Lambda!')
+    'body': json.dumps('scrapping completed')
     }
